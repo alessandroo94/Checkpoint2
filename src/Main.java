@@ -11,9 +11,8 @@ public class Main {
         try {
             List<String> lines = Checkpoint.loadLines(inputFilePath);
             Map<String, Integer> mappa = Checkpoint.processLines(lines);
-            System.out.println(mappa.get("Light"));
+            System.out.println("Light" + mappa.get("Light"));
             Checkpoint.writeLines(outputFilePath, (HashMap<String, Integer>) mappa);
-
 
         } catch (IOException e) {
             e.printStackTrace();
