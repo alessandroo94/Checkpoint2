@@ -28,7 +28,7 @@ public class Checkpoint {
             }
             int index = line.indexOf("$");
             if(index == -1){
-                System.out.println("Line without '$': " + line);
+                System.out.println("La riga senza '$': " + line);
             } else {
                 String key = line.substring(0, index).trim();
                 String value = line.substring(index + 1).trim();
